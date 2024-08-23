@@ -1,0 +1,231 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <!-- Mirrored from demo.themeim.com/html/braine/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2024 17:54:13 GMT -->
+  <head>
+    {% include 'layouts/head.html' %}
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <!-- Cursor -->
+      <div class="cursor"></div>
+      <div class="cursor-follower"></div>
+      <!-- Cursor End -->
+
+      <!-- Preloader -->
+      {% include 'layouts/preloader.html' %}
+      <!-- Preloader End -->
+
+      <!-- Main Header -->
+      <header class="main-header header-style-two alternate">
+        <!-- Header Lower -->
+         {% include "layouts/header.html" %}
+        <!-- End Mobile Menu -->
+      </header>
+      <!-- End Main Header -->
+
+      <!-- Page Title -->
+      <section class="page-title">
+        {% comment %} <div class="page-title-icon" style="background-image:url(assets/images/icons/page-title_icon-1.png)"></div> {% endcomment %}
+        {% comment %} <div class="page-title-icon-two" style="background-image:url(assets/images/icons/page-title_icon-2.png)"></div> {% endcomment %}
+        {% comment %} <div class="page-title-shadow" style="background-image:url(assets/images/background/page-title-1.png)"></div> {% endcomment %}
+        {% comment %} <div class="page-title-shadow_two" style="background-image:url(assets/images/background/page-title-2.png)"></div> {% endcomment %}
+        <div class="auto-container">
+          <h2>Blog</h2>
+          <ul class="bread-crumb clearfix">
+            <li>
+              <a href="{% url "web:index" %}">Inicio</a>
+            </li>
+            <li>Blog</li>
+          </ul>
+        </div>
+      </section>
+      <!-- End Page Title -->
+
+      <!-- News Three -->
+      <section class="news-three">
+        <div class="auto-container">
+          <div class="row clearfix">
+            <!-- News Block One -->
+            <div class="news-block_one col-lg-6 col-md-6 col-sm-12">
+              <div class="news-block_one-inner">
+                <div class="news-block_one-image">
+                  <a href="news-detail.html"><img src="{% static 'images/resource/news-7.jpg' %}" alt="" /></a>
+                </div>
+                <div class="news-block_one-content">
+                  <div class="news-block_one-time">
+                    By Admin <span>6 min read</span>
+                  </div>
+                  <h5 class="news-block_one-title"><a href="news-detail.html">Beyond code the human element in ai development</a></h5>
+                  <a class="news-block_one-more" href="service-detail.html">Read more <i class="fa-solid fa-plus fa-fw"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- News Block One -->
+            <div class="news-block_one col-lg-6 col-md-6 col-sm-12">
+              <div class="news-block_one-inner">
+                <div class="news-block_one-image">
+                  <a href="news-detail.html"><img src="{% static 'images/resource/news-8.jpg' %}" alt="" /></a>
+                </div>
+                <div class="news-block_one-content">
+                  <div class="news-block_one-time">
+                    By Admin <span>6 min read</span>
+                  </div>
+                  <h5 class="news-block_one-title"><a href="news-detail.html">Exploring the cutting-edge of artificial intelligence</a></h5>
+                  <a class="news-block_one-more" href="service-detail.html">Read more <i class="fa-solid fa-plus fa-fw"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- News Block One -->
+            <div class="news-block_one col-lg-6 col-md-6 col-sm-12">
+              <div class="news-block_one-inner">
+                <div class="news-block_one-image">
+                  <a href="news-detail.html"><img src="{% static 'images/resource/news-9.jpg' %}" alt="" /></a>
+                </div>
+                <div class="news-block_one-content">
+                  <div class="news-block_one-time">
+                    By Admin <span>6 min read</span>
+                  </div>
+                  <h5 class="news-block_one-title"><a href="news-detail.html">Understanding the basics of artificial intelligence</a></h5>
+                  <a class="news-block_one-more" href="service-detail.html">Read more <i class="fa-solid fa-plus fa-fw"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- News Block One -->
+            <div class="news-block_one col-lg-6 col-md-6 col-sm-12">
+              <div class="news-block_one-inner">
+                <div class="news-block_one-image">
+                  <a href="news-detail.html"><img src="{% static 'images/resource/news-10.jpg' %}" alt="" /></a>
+                </div>
+                <div class="news-block_one-content">
+                  <div class="news-block_one-time">
+                    By Admin <span>6 min read</span>
+                  </div>
+                  <h5 class="news-block_one-title"><a href="news-detail.html">Transforming industries and shaping the future</a></h5>
+                  <a class="news-block_one-more" href="service-detail.html">Read more <i class="fa-solid fa-plus fa-fw"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- News Block One -->
+            <div class="news-block_one col-lg-6 col-md-6 col-sm-12">
+              <div class="news-block_one-inner">
+                <div class="news-block_one-image">
+                  <a href="news-detail.html"><img src="{% static 'images/resource/news-11.jpg' %}" alt="" /></a>
+                </div>
+                <div class="news-block_one-content">
+                  <div class="news-block_one-time">
+                    By Admin <span>6 min read</span>
+                  </div>
+                  <h5 class="news-block_one-title"><a href="news-detail.html">Diving deep exploring the core algorithms of our ai</a></h5>
+                  <a class="news-block_one-more" href="service-detail.html">Read more <i class="fa-solid fa-plus fa-fw"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- News Block One -->
+            <div class="news-block_one col-lg-6 col-md-6 col-sm-12">
+              <div class="news-block_one-inner">
+                <div class="news-block_one-image">
+                  <a href="news-detail.html"><img src="assets/images/resource/news-12.jpg" alt="" /></a>
+                </div>
+                <div class="news-block_one-content">
+                  <div class="news-block_one-time">
+                    By Admin <span>6 min read</span>
+                  </div>
+                  <h5 class="news-block_one-title"><a href="news-detail.html">The art and science of building intelligent machines</a></h5>
+                  <a class="news-block_one-more" href="service-detail.html">Read more <i class="fa-solid fa-plus fa-fw"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- News Block One -->
+            <div class="news-block_one col-lg-6 col-md-6 col-sm-12">
+              <div class="news-block_one-inner">
+                <div class="news-block_one-image">
+                  <a href="news-detail.html"><img src="assets/images/resource/news-13.jpg" alt="" /></a>
+                </div>
+                <div class="news-block_one-content">
+                  <div class="news-block_one-time">
+                    By Admin <span>6 min read</span>
+                  </div>
+                  <h5 class="news-block_one-title"><a href="news-detail.html">Navigating the ai front challenges and triumphs</a></h5>
+                  <a class="news-block_one-more" href="service-detail.html">Read more <i class="fa-solid fa-plus fa-fw"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- News Block One -->
+            <div class="news-block_one col-lg-4 col-md-6 col-sm-12">
+              <div class="news-block_one-inner">
+                <div class="news-block_one-image">
+                  <a href="news-detail.html"><img src="assets/images/resource/news-14.jpg" alt="" /></a>
+                </div>
+                <div class="news-block_one-content">
+                  <div class="news-block_one-time">
+                    By Admin <span>6 min read</span>
+                  </div>
+                  <h5 class="news-block_one-title"><a href="news-detail.html">Innovation unleashed: behind the scenes our ai breakthroughs</a></h5>
+                  <a class="news-block_one-more" href="service-detail.html">Read more <i class="fa-solid fa-plus fa-fw"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- News Block One -->
+            <div class="news-block_one col-lg-4 col-md-6 col-sm-12">
+              <div class="news-block_one-inner">
+                <div class="news-block_one-image">
+                  <a href="news-detail.html"><img src="assets/images/resource/news-15.jpg" alt="" /></a>
+                </div>
+                <div class="news-block_one-content">
+                  <div class="news-block_one-time">
+                    By Admin <span>6 min read</span>
+                  </div>
+                  <h5 class="news-block_one-title"><a href="news-detail.html">Decoding the future: ai's impact on the industries</a></h5>
+                  <a class="news-block_one-more" href="service-detail.html">Read more <i class="fa-solid fa-plus fa-fw"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Styled Pagination -->
+          <ul class="styled-pagination text-center">
+            <li>
+              <a href="#" class="active">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li class="next">
+              <a href="#"><span class="fa-solid fa-angle-right fa-fw"></span></a>
+            </li>
+          </ul>
+          <!-- End Styled Pagination -->
+        </div>
+      </section>
+      <!-- End News Three -->
+
+      <div>
+        <span>-----</span>
+      </div>
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        {% include 'layouts/footer.html' %}
+      </footer>
+    </div>
+    <!-- End PageWrapper -->
+    {% include 'layouts/scripts.html' %}
+
+    <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif] -->
+    <!-- [if lt IE 9]><script src="js/respond.js"></script><![endif] -->
+  </body>
+
+  <!-- Mirrored from demo.themeim.com/html/braine/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2024 17:54:18 GMT -->
+</html>

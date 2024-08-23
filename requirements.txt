@@ -1,0 +1,3 @@
+psycopg2
+pillow
+django==4.2

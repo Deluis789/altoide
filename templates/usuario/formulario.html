@@ -1,0 +1,194 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from demo.themeim.com/html/braine/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2024 17:54:25 GMT -->
+<head>
+	{% include "layouts/head.html" %}
+</head>
+
+<body>
+
+<div class="page-wrapper">
+	
+	<!-- Preloader -->
+	{% include "layouts/preloader.html" %}
+	<!-- Preloader End -->
+	
+	<!-- Main Header -->
+	<header class="main-header header-style-two alternate">
+		{% include "layouts/header.html" %}
+	</header>
+	<!-- End Main Header -->
+	
+	<!-- Page Title -->
+    <section class="page-title">
+			<h2>Registrarse</h2>
+			<ul class="bread-crumb clearfix">
+				<li><a href="index.html">Inicio</a></li>
+				<li>Registrarse</li>
+			</ul>
+        </div>
+    </section>
+    <!-- End Page Title -->
+
+	<!-- Team Detail Form -->
+	<section class="team-detail_form">
+		<div class="auto-container">
+			<div class="row clearfix">
+				<!-- Column -->
+				<div class="column col-lg-6 col-md-12 col-sm-12">
+					<!-- Sec Title -->
+					<div class="sec-title style-four">
+						<div class="sec-title_title">Bienvenido - {{user.username}}</div>
+						<h2 class="sec-title_heading"><span>Unidad de Riesgo</span></h2>
+						<div class="sec-title_text">Lorem ipsum dolor sit amet consectetur adipiscing <br> elit Ut et massa Aliquam in hendrerit urna.</div>
+					</div>
+					<!-- Social Box -->
+					<div class="contact-social_box">
+						<a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+						<a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+						<a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+					</div>
+				</div>
+				<!-- Column -->
+				<div class="column col-lg-6 col-md-12 col-sm-12">
+					<div class="default-form contact-form">
+						<form method="post" action="https://demo.themeim.com/html/braine/sendemail.php" id="contact-form">
+							<div class="row clearfix mb-4">
+								<!--Form Group-->
+								<div class="form-group col-lg-6 col-md-6 col-sm-6 ">
+                                    <label for="floatingInputGrid" class="text-light">Codigo de Usuario:</label>
+									<input type="text" name="name" value=""required>
+								</div>
+                            </div>     
+								<!--Form Group-->
+                            <div class="row clearfix">
+								<div class="form-group col-lg-4 col-md-5 col-sm-5">
+									<input type="text" name="name" value="" placeholder="Nombres" required>
+								</div>
+								<div class="form-group col-lg-4 col-md-5 col-sm-5">
+									<input type="text" name="ap_paterno" value="" placeholder="AP. Paterno" required>
+								</div>
+                                <div class="form-group col-lg-4 col-md-5 col-sm-5">
+									<input type="text" name="ap_materno" value="" placeholder="AP. Materno" required>
+								</div>
+                            </div> 
+								<!--Form Group-->
+                                <div class="container mt-3">
+                                    <div class="row">
+                                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                            <select name="country" class="custom-select">
+                                                <option>Rol</option>
+                                                <option>Service 01</option>
+                                                <option>Service 02</option>
+                                                <option>Service 03</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                            <input type="text" name="ci" class="form-control" placeholder="C.I." required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row clearfix">
+                                    <label for="floatingInputGrid" class="text-light">Dirección:</label>
+                                    <div class="row">
+                                        <div class="form-group col-lg-8 col-md-6 col-sm-12 mb-3">
+                                            <select name="country" class="custom-select">
+                                                <option>Zona/Urbanización</option>
+                                                <option>Service 01</option>
+                                                <option>Service 02</option>
+                                                <option>Service 03</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row clearfix">
+                                    <div class="form-group col-lg-12 col-md-5 col-sm-5 mb-3">
+                                        <input type="text" name="calle_avenida" value="" placeholder="Calle/Avenida" required>
+                                    </div>
+                                </div> 
+                                <div class="row clearfix">
+                                    <div class="form-group col-lg-8 col-md-5 col-sm-5 mb-3">
+                                        <input type="text" name="numero_vivienda" value="" placeholder="Número de vivienda" required>
+                                    </div>
+                                </div> 
+								<div class="form-group col-lg-12 col-md-12 col-sm-12">
+									<button type="button" class="template-btn btn-style-one">
+										<span class="btn-wrap">
+											<span class="text-one">Crear</span>
+											<span class="text-two">Crear</span>
+										</span>
+									</button>
+								</div>
+								
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Team Detail Form -->
+
+	<!-- Map One -->
+	<section class="map-one">
+		<div class="auto-container">
+			<div class="map-one_map">
+				<iframe width="820" height="560" id="gmap_canvas" src="https://maps.google.com/maps?q=636+5th+Ave%2C+New+York&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
+			</div>
+		</div>
+	</section>
+	<!-- End Map One -->
+	<!-- Main Footer -->
+	<footer class="main-footer">
+		{% include "layouts/footer.html" %}
+	</footer>
+
+</div>
+<!-- End PageWrapper -->
+
+{% load static %}
+
+<div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+    </svg>
+</div>
+
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/parallax.min.js' %}"></script>
+<script src="{% static 'js/tilt.jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery.paroller.min.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/swiper.min.js' %}"></script>
+<script src="{% static 'js/backtotop.js' %}"></script>
+<script src="{% static 'js/odometer.js' %}"></script>
+<script src="{% static 'js/parallax-scroll.js' %}"></script>
+
+<script src="{% static 'js/gsap.min.js' %}"></script>
+<script src="{% static 'js/SplitText.min.js' %}"></script>
+<script src="{% static 'js/ScrollTrigger.min.js' %}"></script>
+<script src="{% static 'js/ScrollToPlugin.min.js' %}"></script>
+<script src="{% static 'js/ScrollSmoother.min.js' %}"></script>
+
+<script src="{% static 'js/magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/nav-tool.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/element-in-view.js' %}"></script>
+<script src="{% static 'js/validate.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+</body>
+
+<!-- Mirrored from demo.themeim.com/html/braine/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2024 17:54:26 GMT -->
+</html>

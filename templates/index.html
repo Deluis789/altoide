@@ -1,0 +1,414 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <!-- Mirrored from demo.themeim.com/html/braine/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2024 17:53:20 GMT -->
+  <head>
+    {% include 'layouts/head.html' %}
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      {% include 'layouts/preloader.html' %}
+
+      <!-- Main Header -->
+      <header class="main-header header-style-one">
+        {% include 'layouts/header.html' %}
+      </header>
+      <!-- End Main Header -->
+
+      <!-- Slider One -->
+      <section class="slider-one">
+        <div class="main-slider swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="slider-one_icon-two" style="background-image:url({% static '/images/main-slider/icon-1.png' %})"></div>
+              <div class="slider-one_pattern" style="background-image:url({% static '/images/main-slider/pattern-1.png' %})"></div>
+              <div class="slider-one_pattern-two" style="background-image:url({% static '/images/main-slider/pattern-2.png' %})"></div>
+              <div class="slider-one_pattern-four" style="background-image:url({% static '/images/main-slider/pattern-4.png' %})"></div>
+              <div class="auto-container">
+                <div class="row clearfix">
+                  <!-- Content Column -->
+                  <div class="slider-one_content col-lg-7 col-md-12 col-sm-12">
+                    <div class="slider-one_content-inner">
+                      <div class="slider-one_title">
+                        <i><img src="{% static '#' %}" alt="" /></i> Unidad de Riesgo
+                      </div>
+                      <h1 class="slider-one_heading"><span>IDE</span> Ciudad <br /> de el Alto</h1>
+                      <div class="slider-one_text">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</div>
+                      <div class="slider-one_button d-flex align-items-center flex-wrap">
+                        <a href="{% url 'web:registrar' %}" class="template-btn btn-style-one">
+                          <span class="btn-wrap">
+                            <span class="text-one">Registrase</span>
+                            <span class="text-two">Ingresar</span>
+                          </span>
+                        </a>
+                        <div class="slider-one_video">
+                          <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-video play-box"><span class="fa fa-play"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Image Column -->
+                  <div class="slider-one_image-column col-lg-5 col-md-12 col-sm-12">
+                    <div class="slider-one_pattern-three" style="background-image:url(assets/images/main-slider/pattern-3.png)"></div>
+                    <div class="slider-one_image-outer">
+                      <div class="slider-one_percentage">
+                        <i class="fa-solid fa-arrow-up fa-fw"></i>
+                        <div class="slider-one_percent">
+                          99<sub>%</sub>
+                        </div>
+                        <div class="slider-one_percentage-text">Eficientes</div>
+                      </div>
+                      <div class="slider-one_graph">
+                        <img src="{% static '/images/main-slider/graph.png' %}" alt="" />
+                      </div>
+                      <div class="slider-one_image">
+                        <img src="{% static '/images/main-slider/portada1.png' %}" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="slider-one_icon-two" style="background-image:url({% static '/images/main-slider/icon-1.png)' %}"></div>
+              <div class="slider-one_pattern" style="background-image:url({% static '/images/main-slider/pattern-1.png' %})"></div>
+              <div class="slider-one_pattern-two" style="background-image:url({% static '/images/main-slider/pattern-2.png' %})"></div>
+              <div class="slider-one_pattern-four" style="background-image:url({% static '/images/main-slider/pattern-4.png' %})"></div>
+              <div class="auto-container">
+                <div class="row clearfix">
+                  <!-- Content Column -->
+                  <div class="slider-one_content col-lg-7 col-md-12 col-sm-12">
+                    <div class="slider-one_content-inner">
+                      <h1 class="slider-one_heading"><span>IDE</span> Ciudad <br /> de el Alto</h1>
+                      <div class="slider-one_text">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</div>
+                      <div class="slider-one_button d-flex align-items-center flex-wrap">
+                        <a href="{% url 'web:registrar' %}" class="template-btn btn-style-one">
+                          <span class="btn-wrap">
+                            <span class="text-one">Registrarse</span>
+                            <span class="text-two">Ingresar</span>
+                          </span>
+                        </a>
+                        <div class="slider-one_video">
+                          <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-video play-box"><span class="fa fa-play"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Image Column -->
+                  <div class="slider-one_image-column col-lg-5 col-md-12 col-sm-12">
+                    <div class="slider-one_pattern-three" style="background-image:url({% static '/images/main-slider/pattern-3.png' %})"></div>
+                    <div class="slider-one_image-outer">
+                      <div class="slider-one_percentage">
+                        <i class="fa-solid fa-arrow-up fa-fw"></i>
+                        <div class="slider-one_percent">
+                          99<sub>%</sub>
+                        </div>
+                        <div class="slider-one_percentage-text">Eficientes</div>
+                      </div>
+                      <div class="slider-one_image">
+                        <img src="{% static '/images/main-slider/portada1.png' %}" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="slider-one_icon-two" style="background-image:url({% static '/images/main-slider/icon-1.png' %})"></div>
+              <div class="slider-one_pattern" style="background-image:url({% static '/images/main-slider/pattern-1.png)' %})"></div>
+              <div class="slider-one_pattern-two" style="background-image:url({% static '/images/main-slider/pattern-2.png' %})"></div>
+              <div class="slider-one_pattern-four" style="background-image:url({% static '/images/main-slider/pattern-4.png' %})"></div>
+              <div class="auto-container">
+                <div class="row clearfix">
+                  <!-- Content Column -->
+                  <div class="slider-one_content col-lg-7 col-md-12 col-sm-12">
+                    <div class="slider-one_content-inner">
+                      <h1 class="slider-one_heading"><span>IDE</span> Ciudad <br /> de el Alto</h1>
+                      <div class="slider-one_text">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</div>
+                      <div class="slider-one_button d-flex align-items-center flex-wrap">
+                        <a href="{% url 'web:registrar' %}" class="template-btn btn-style-one">
+                          <span class="btn-wrap">
+                            <span class="text-one">Registrarse</span>
+                            <span class="text-two">Ingresar</span>
+                          </span>
+                        </a>
+                        <div class="slider-one_video">
+                          <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-video play-box"><span class="fa fa-play"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Image Column -->
+                  <div class="slider-one_image-column col-lg-5 col-md-12 col-sm-12">
+                    <div class="slider-one_pattern-three" style="background-image:url({% static '/images/main-slider/pattern-3.png' %})"></div>
+                    <div class="slider-one_image-outer">
+                      <div class="slider-one_percentage">
+                        <i class="fa-solid fa-arrow-up fa-fw"></i>
+                        <div class="slider-one_percent">
+                          99<sub>%</sub>
+                        </div>
+                        <div class="slider-one_percentage-text">Eficientes</div>
+                      </div>
+                      <div class="slider-one_image">
+                        <img src="{% static '/images/main-slider/portada1.png' %}" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Main Slider Section -->
+
+      <!-- Services One -->
+      <section class="services-one">
+        <div class="auto-container">
+          <!-- Sec Title -->
+          <div class="sec-title centered">
+            <div class="sec-title_title">Servicios</div>
+            <h2 class="sec-title_heading">Experiencia<br /> <span>Unidad de Riesgos</span></h2>
+          </div>
+          <div class="row clearfix">
+            <!-- Service Block One -->
+            <div class="service-block_one col-lg-4 col-md-6 col-sm-12">
+              <div class="service-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="service-block_one-icon">
+                  <i class="icon-speaker1"></i>
+                </div>
+                <h5 class="service-block_one-heading"><a href="service-detail.html">Titulo</a></h5>
+                <div class="service-block_one-text">
+                  Lorem ipsum dolor sit ame consectetur adipiscing elit Ut et <span>massa mi. Aliquam</span> in hendrerit urna..
+                </div>
+                <div class="lower-box d-flex justify-content-between align-items-center flex-wrap">
+                  <div class="service-block_one-number">01</div>
+                  <a class="service-block_one-join" href="service-detail.html">Titulo <i class="fa-solid fa-plus fa-fw"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Block One -->
+            <div class="service-block_one col-lg-4 col-md-6 col-sm-12">
+              <div class="service-block_one-inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="service-block_one-icon">
+                  <i class="icon-marketing"></i>
+                </div>
+                <h5 class="service-block_one-heading"><a href="service-detail.html">Titulo</a></h5>
+                <div class="service-block_one-text">
+                  Lorem ipsum dolor sit ame consectetur adipiscing elit Ut et <span>massa mi. Aliquam</span> in hendrerit urna..
+                </div>
+                <div class="lower-box d-flex justify-content-between align-items-center flex-wrap">
+                  <div class="service-block_one-number">02</div>
+                  <a class="service-block_one-join" href="service-detail.html">Titulo<i class="fa-solid fa-plus fa-fw"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Block One -->
+            <div class="service-block_one col-lg-4 col-md-6 col-sm-12">
+              <div class="service-block_one-inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="service-block_one-icon">
+                  <i class="icon-users"></i>
+                </div>
+                <h5 class="service-block_one-heading"><a href="service-detail.html">Titulo</a></h5>
+                <div class="service-block_one-text">
+                  Lorem ipsum dolor sit ame consectetur adipiscing elit Ut et <span>massa mi. Aliquam</span> in hendrerit urna..
+                </div>
+                <div class="lower-box d-flex justify-content-between align-items-center flex-wrap">
+                  <div class="service-block_one-number">03</div>
+                  <a class="service-block_one-join" href="service-detail.html">Titulo <i class="fa-solid fa-plus fa-fw"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Block One -->
+            <div class="service-block_one col-lg-4 col-md-6 col-sm-12">
+              <div class="service-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="service-block_one-icon">
+                  <i class="icon-copyright"></i>
+                </div>
+                <h5 class="service-block_one-heading"><a href="service-detail.html">Titulo</a></h5>
+                <div class="service-block_one-text">
+                  Lorem ipsum dolor sit ame consectetur adipiscing elit Ut et <span>massa mi. Aliquam</span> in hendrerit urna..
+                </div>
+                <div class="lower-box d-flex justify-content-between align-items-center flex-wrap">
+                  <div class="service-block_one-number">04</div>
+                  <a class="service-block_one-join" href="service-detail.html">Titulo <i class="fa-solid fa-plus fa-fw"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Block One -->
+            <div class="service-block_one col-lg-4 col-md-6 col-sm-12">
+              <div class="service-block_one-inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="service-block_one-icon">
+                  <i class="icon-tag"></i>
+                </div>
+                <h5 class="service-block_one-heading"><a href="service-detail.html">Titulo</a></h5>
+                <div class="service-block_one-text">
+                  Lorem ipsum dolor sit ame consectetur adipiscing elit Ut et <span>massa mi. Aliquam</span> in hendrerit urna..
+                </div>
+                <div class="lower-box d-flex justify-content-between align-items-center flex-wrap">
+                  <div class="service-block_one-number">05</div>
+                  <a class="service-block_one-join" href="service-detail.html">Titulo <i class="fa-solid fa-plus fa-fw"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Block Two -->
+            <div class="service-block_two col-lg-4 col-md-6 col-sm-12">
+              <div class="service-block_two-inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="service-block_two-sideicon" style="background-image:url(assets/images/icons/service-1.png)"></div>
+                <div class="service-block_two-icon">
+                  <img src="assets/images/icons/service.png" alt="" />
+                </div>
+                <h5 class="service-block_two-heading"><a href="service-detail.html">Titulo</a></h5>
+                <div class="service-block_two-text">Lorem ipsum dolor sit ame consectetur.</div>
+                <div class="service-block_two-button">
+                  <a href="service.html" class="template-btn btn-style-one">
+                    <span class="btn-wrap">
+                      <span class="text-one">Titulo</span>
+                      <span class="text-two">Titulo</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services One -->
+
+      <!-- About One -->
+      <section class="about-one">
+        <div class="about-one_pattern" style="background-image:url({% static '/images/background/about-pattern.png' %})"></div>
+        <div class="auto-container">
+          <div class="row clearfix">
+            <!-- Tab Column -->
+            <div class="about-one_tab-column col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <div class="about-one_tab-outer">
+                <div class="about-one_tab-shadow" style="background-image:url({% static '/images/background/tab-shadow.png' %})"></div>
+                <div class="about-one_tab-image">
+                  <img src="{% static '/images/resource/tabs.png' %}" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Column -->
+            <div class="about-one_content-column col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <div class="about-one_content-outer">
+                <!-- Sec Title -->
+                <div class="sec-title">
+                  <div class="sec-title_title">Titulo</div>
+                  <h2 class="sec-title_heading">IDE <span>Misión y Visión</span></h2>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. <span>Pellentesque sit amet</span> sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing vitae mattis tellus. Nullam quis mattis ligula consectetur.</p>
+                <div class="about-one_options d-flex align-items-center flex-wrap">
+                  <a href="about.html" class="template-btn btn-style-one">
+                    <span class="btn-wrap">
+                      <span class="text-one">Documentación</span>
+                      <span class="text-two">Ingresar Doc.</span>
+                    </span>
+                  </a>
+                  <div class="about-one_rating-box d-flex align-items-center flex-wrap">
+                    4.7<div class="about-one_rating">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <i>Cuestionar</i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About One -->
+
+      <!-- Steps One -->
+      <section class="steps-one">
+        <div class="steps-one_bg" style="background-image:url({% static '/images/background/step-1_bg.png' %})"></div>
+        <div class="steps-one_icon" style="background-image:url({% static '/images/icons/step.png' %})"></div>
+        <div class="auto-container">
+          <div class="inner-container">
+            <div class="circle-layer"></div>
+            <div class="dots-layer">
+              <span class="dot-one"></span>
+              <span class="dot-two"></span>
+            </div>
+
+            <!-- Sec Title -->
+            <div class="sec-title">
+              <div class="sec-title_title">Comó funciona</div>
+              <h2 class="sec-title_heading">Unidad <span>de</span> Riesgo</h2>
+            </div>
+            <div class="steps-one_button">
+              <a href="about.html" class="template-btn btn-style-two">
+                <span class="btn-wrap">
+                  <span class="text-one">Saber más..</span>
+                  <span class="text-two">Saber más..</span>
+                </span>
+              </a>
+            </div>
+            <div class="row clearfix">
+              <!-- Column -->
+              <div class="column col-lg-6 col-md-12 col-sm-12">
+                <!-- Step Block One -->
+                <div class="step-block_one">
+                  <div class="step-block_one-inner">
+                    <div class="step-block_one-steps">paso 01</div>
+                    <h5 class="step-block_one-title">Titulo</h5>
+                    <div class="step-block_one-text">Lorem ipsum dolor sit ame consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna..</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Column -->
+              <div class="column col-lg-6 col-md-12 col-sm-12">
+                <!-- Step Block One -->
+                <div class="step-block_one">
+                  <div class="step-block_one-inner">
+                    <div class="step-block_one-steps">paso 02</div>
+                    <h5 class="step-block_one-title">Titulo</h5>
+                    <div class="step-block_one-text">Lorem ipsum dolor sit ame consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna..</div>
+                  </div>
+                </div>
+
+                <!-- Step Block One -->
+                <div class="step-block_one">
+                  <div class="step-block_one-inner">
+                    <div class="step-block_one-steps">paso 03</div>
+                    <h5 class="step-block_one-title">Titulo</h5>
+                    <div class="step-block_one-text">Lorem ipsum dolor sit ame consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna..</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Steps One -->
+
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        {% include 'layouts/footer.html' %}
+      </footer>
+    </div>
+    <!-- End PageWrapper -->
+    {% include 'layouts/scripts.html' %}
+  </body>
+
+  <!-- Mirrored from demo.themeim.com/html/braine/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2024 17:53:46 GMT -->
+</html>

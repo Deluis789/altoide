@@ -1,0 +1,174 @@
+{% load static %}
+<div class="header-lower">
+  <div class="auto-container">
+    <div class="inner-container">
+      <div class="d-flex justify-content-between align-items-center flex-wrap">
+        <div class="logo-box">
+          <div class="logo">
+            {% block 'logo' %}<a href="{% url "web:index" %}"
+              ><img src="{% static '/images/logo.png' %}" alt="" title=""
+            /></a>{% endblock  %}
+          </div>
+        </div>
+
+        <div class="nav-outer d-flex flex-wrap">
+          <!-- Main Menu -->
+          <nav class="main-menu navbar-expand-md">
+            <div class="navbar-header">
+              <!-- Toggle Button -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <div
+              class="navbar-collapse collapse clearfix"
+              id="navbarSupportedContent"
+            >
+              <ul class="navigation clearfix">
+                <li>
+                  <a href="{% url "web:index" %}">Inicio</a>
+                </li>
+                <li><a href="#">Acerca de Nosotros</a></li>
+                <li class="#">
+                  <a href="#">Geoportal</a>
+                  <ul>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Price</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Forgot password</a></li>
+                    <li class="dropdown">
+                      <a href="#">Team</a>
+                      <ul>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Team detail</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Servicios</a>
+                  <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="service-detail.html">Services detail</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Blog</a>
+                  <ul>
+                    <li><a href="{% url 'web:blog' %}">Blog principal</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Contactos</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Main Menu End-->
+        <div class="outer-box d-flex align-items-center flex-wrap">
+          <!-- Language DropDown -->
+          <div class="language-dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="flag"
+              /></span>
+              <span class="fa-solid fa-angle-down fa-fw"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><span class="flag"
+                  /></span>
+                  English</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><span class="flag"
+                  /></span>
+                  Español</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Button Box -->
+          <div class="main-header_buttons">
+            <a href="{% url 'web:registrar' %}" class="template-btn btn-style-two">
+              <span class="btn-wrap">
+                <span class="text-one">Registrarse</span>
+                <span class="text-two">Registrarse</span>
+              </span>
+            </a>
+            <a href="{% url 'web:crearUsuario' %}" class="template-btn btn-style-one">
+              <span class="btn-wrap">
+                <span class="text-one">Ingresar</span>
+                <span class="text-two">Ingresar</span>
+              </span>
+            </a>
+          </div>
+
+          <!-- Mobile Navigation Toggler -->
+          <div class="mobile-nav-toggler">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-menu-2"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 6l16 0" />
+              <path d="M4 12l16 0" />
+              <path d="M4 18l16 0" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Header Lower-->
+
+<!-- Mobile Menu  -->
+<div class="mobile-menu">
+  <div class="menu-backdrop"></div>
+  <div class="close-btn">
+    <span class="icon fa-solid fa-xmark fa-fw"></span>
+  </div>
+
+  <nav class="menu-box">
+    <div class="nav-logo">
+      <a href="index.html"
+        ><img src="{% static '/images/logo.png' %}" alt="" title=""
+      /></a>
+    </div>
+    <div class="menu-outer">
+      <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+    </div>
+  </nav>
+</div>
+<!-- End Mobile Menu -->

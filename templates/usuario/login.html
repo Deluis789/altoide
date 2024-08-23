@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from demo.themeim.com/html/braine/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2024 17:54:08 GMT -->
+<head>
+	{% include "layouts/head.html" %}
+</head>
+
+<body>
+
+<div class="page-wrapper">
+	
+	<!-- Cursor -->
+	{% include "layouts/preloader.html" %}
+	<!-- Preloader End -->
+	
+	<!-- Main Header -->
+	<header class="main-header header-style-two alternate">
+		{% include "layouts/header.html" %}
+	</header>
+	<!-- End Main Header -->
+	
+	<!-- Page Title -->
+    <section class="page-title">
+        <div class="auto-container">
+			<h2>Inicio de sesión</h2>
+			<ul class="bread-crumb clearfix">
+				<li><a href="index.html">Inicio</a></li>
+				<li>Inicio de sesión nuevo</li>
+			</ul>
+        </div>
+    </section>
+    <!-- End Page Title -->
+
+	<!-- Register One -->
+	<section class="register-one">
+		<div class="auto-container">
+			<div class="inner-container">
+				<h3>Login</h3>
+
+				<!-- Register Form -->
+				<div class="register-form">
+					<form method="post" action="{% url "web:crearUsuario" %}">
+						{% csrf_token %}
+						<div class="form-group">
+							<label>Usuario:</label>
+							<input type="text" name="name" placeholder="" required="">
+						</div>
+
+						<div class="form-group">
+							<label>Contraseña*</label>
+							<span class="icon fa-regular fa-eye fa-fw"></span>
+							<input type="password" name="password" placeholder="" required="">
+						</div>
+
+						<div class="form-group">
+							<div class="d-flex justify-content-between align-items-center flex-wrap">
+								<div class="check-box">
+									<input type="checkbox" name="remember-password" id="type-1"> 
+									<label for="type-1">Recordar</label>
+								</div>
+								<a class="forgot-psw" href="#">Olvidaste tu contraseña?</a>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<!-- Button Box -->
+							<button type="submit" class="submit-btn btn-style-one">
+								<span class="btn-wrap">
+									<span class="text-one">Crear Usuario</span>
+									<span class="text-two">Crear Usuario</span>
+								</span>
+							</button>
+						</div>
+						
+						<div class="form-group">
+							<div class="creat-account">No tienes cuenta? <a href="#">Crear una cuenta</a></div>
+						</div>
+
+					</form>
+				</div>
+				<!-- End Default Form -->
+
+			</div>
+		</div>
+	</section>
+	<!-- End Register One -->
+	</br>
+	</br>
+	<!-- Main Footer -->
+	<footer class="main-footer">
+		{% include "layouts/footer.html" %}
+	</footer>
+
+</div>
+<!-- End PageWrapper -->
+	{% include "layouts/scripts.html" %}
+</body>
+
+<!-- Mirrored from demo.themeim.com/html/braine/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2024 17:54:08 GMT -->
+</html>
