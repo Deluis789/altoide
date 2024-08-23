@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'ide.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "dbAlto",
+        "NAME": "elAlto",
         "USER": "postgres",
         "PASSWORD": "admin",
         "HOST": "127.0.0.1",

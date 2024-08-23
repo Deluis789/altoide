@@ -1,0 +1,14 @@
+/* Estilo personalizado para los botones en el panel de administración */
+.btn-custom {
+    background-color: #007bff; /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    padding: 10px 20px; /* Ajusta el espaciado interno */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.btn-custom:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el mouse */
+}
+
