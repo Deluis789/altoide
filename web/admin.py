@@ -51,7 +51,7 @@ class HiddenModelAdmin(admin.ModelAdmin):
         return False  # Oculta el modelo de la interfaz de administración
 
 # Mantén tu lógica personalizada para cada modelo aquí
-class SolicitudVecinoAdmin(admin.ModelAdmin):
+class SolicitudVecinoAdmin(HiddenModelAdmin):
     list_display = ('vecino_codigo_usuario', 'distrito', 'zona_urbanizacion', 'ubicacion_direccion', 'latitud', 'longitud', 'foto_solicitud', 'celular', 'google_maps_link')
     search_fields = ('vecino__codigo_usuario', 'ubicacion_direccion', 'distrito__nombre', 'zona_urbanizacion__nombre')
     list_filter = ('distrito', 'zona_urbanizacion')
@@ -95,7 +95,7 @@ class DistritoAdmin(HiddenModelAdmin):
 class CalleAvAdmin(HiddenModelAdmin):
     list_display = [field.name for field in CalleAv._meta.fields]
 
-class FichaOperativaAdmin(admin.ModelAdmin):
+class FichaOperativaAdmin(HiddenModelAdmin):
     form = FichaOperativaForm  # Usar el formulario personalizado
 
     # Mostrar campos específicos en la lista de elementos
@@ -124,7 +124,7 @@ class FichaOperativaAdmin(admin.ModelAdmin):
     readonly_fields = ['fecha']
     change_list_template = 'admin/fichas.html'
     
-class SolicitudesAdmin(admin.ModelAdmin):
+class SolicitudesAdmin(HiddenModelAdmin):
     form = SolicitudesForm
     list_display = ['solicitud_vecino', 'distrito', 'zonaurb', 'fecha', 'estado', 'asignacion']
     search_fields = ['solicitud_vecino__vecino__codigo_usuario', 'distrito__nombre', 'zonaurb__nombre', 'estado']
